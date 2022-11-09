@@ -6,21 +6,10 @@
 
 body {
   height: 100vh;
-  
-  
 }
 
-main {
-  
-  height: 80%;
- 
+.planets {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-div {
-  height: 50px;
-  width: 50px;
-}
 
