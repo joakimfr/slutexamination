@@ -21,12 +21,18 @@ async function getPlanets() {
 
     planets = data.bodies;
 
-  planets.forEach((planet) => {
-    document.getElementById(
-      "planeter"
-    ).innerHTML += `<div id="planet${planet.id}"></div>`;
-    
-});
+    planets.forEach((planet) => {
+        if (planet.id === 6) {
+          document.getElementById(
+            "planeter"
+          ).innerHTML += `<div class="circle-div"><div id="planet${planet.id}"></div>
+          <div id="saturnus-line"></div></div>`;
+        } else {
+          document.getElementById(
+            "planeter"
+          ).innerHTML += `<div id="planet${planet.id}"></div>`;
+        }
+      });
 
 
 planets.forEach((planet) => {
@@ -34,12 +40,21 @@ planets.forEach((planet) => {
     
       .getElementById(`planet${planet.id}`)
       .addEventListener("click", () => {
-        changeColor();
+        const element = document.querySelector(`#planet${planet.id}`);
+        const style = getComputedStyle(element);
+        const backgroundColor = style.backgroundColor;
+
+        document.getElementById("valdplanet").style.backgroundColor = `${backgroundColor}`
+
         document.getElementById("rubrik").innerHTML = `${planet.name}`; 
         document.getElementById("latin").innerHTML = `${planet.latinName}`;
         document.getElementById("info").innerHTML = `${planet.desc}`;
         document.getElementById("circumference").innerHTML = `OMKRETS <br/> ${planet.circumference}`;
         document.getElementById("distance").innerHTML = `KM från solen <br/> ${planet.distance}`;
+        document.getElementById("max-temp").innerHTML = `MAX TEMPERATUR <br/> ${planet.temp.day}`;
+        document.getElementById("min-temp").innerHTML = `MIN TEMPERATUR <br/> ${planet.temp.night}`;
+        document.getElementById("moons").innerHTML = `MÅNAR <br/> ${planet.moons}`;
+
         playAgainModal.style.display = "block";
       });
   });
@@ -55,12 +70,5 @@ let close = document.getElementsByClassName("close")[0];
  close.onclick = function() {
   modal.style.display = "none";
 }
-changeColor();
-function changeColor() {
-  
-  const element = document.querySelector("#saturnus-line")
-  const style = getComputedStyle(element)
-  const backgroundColor = style.backgroundColor
-  console.log(backgroundColor)
-}
+
 
