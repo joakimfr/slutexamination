@@ -4,68 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Solsystemet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300;400&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-    <main>
-      <div class="headlines">
-      <h1 class=>SOLSYSTEMET</h1>
-          <h3>Solaris</h3>
-        </div>
 
-
-        <div class="planet-wrapper">
-          
-          <div id="planeter">
-            
-          </div>
-          <div id="planetInfo"></div>
-          
-        </div>
-        <footer>
-        <h2>zocom</h2>
-      </footer>
-        
-          
-          <div id="myModal" class="modal">
-            
-              <div class="modal-content">
-                
-                
-                  
-                  <div id="valdplanet"></div>
-                
-               
-                
-                <div class="modal-body">
-                    
-                    
-                  <div class="first">
-                    <span class="close">Close</span>
-                  <h1 id="rubrik"></h1>
-                  <h2 id="latin"></h2> 
-                  <p id="info"></p>
-                </div>
-                  <h3 id="circumference"></h3>
-                  <h3 id="distance"></h3>
-                  <h3 id="max-temp"></h3>
-                  <h3 id="min-temp"></h3>
-                  <h3 id="moons"></h3>
-                
-                  
-                  <h2>zocom</h2>
-                  
-                </div>
-                
-              </div>
-              
+<main>
+  <header>
+    <h1 class=>SOLSYSTEMET</h1>
+    <h2>SOLARIS</h2>
+  </header>
+  <div class="planet-wrapper">
+    <div id="planeter"></div>
+      <div id="planetInfo"></div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div id="choosed-planet"></div>
+          <div class="modal-body">
+            <div class="close-container">
+              <span class="close">Tillbaka</span>
             </div>
-     
-      </main>
-
-
-    <script src="js/index.js"></script>
+            <div class="box-one">
+              <h1 id="rubrik"></h1>
+              <h2 id="latin"></h2> 
+            </div>
+            <div class="box-two">  
+              <p id="info"></p>
+            </div>
+            <div class="box-three">
+              <article>
+                <h2>OMKRETS</h2>
+                <h3 id="circumference"></h3>
+              </article> 
+              <article>
+                <h2>KM FRÅN SOLEN</h2>
+                <h3 id="distance"></h3>
+              </article>
+            </div>
+            <div class="box-four">
+            <article>
+              <h2>MAX TEMPERATUR</h2>
+              <h3 id="max-temp"></h3>
+            </article>
+            <article>
+              <h2>MIN TEMPERATUR</h2>
+              <h3 id="min-temp"></h3>
+            </article>
+          </div>
+            <div class="box-five">
+              <article>
+                <h2>MÅNAR</h2>
+                <h3 id="moons"></h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<script src="js/index.js"></script>
 </body>
 </html>
