@@ -221,8 +221,8 @@ header h2 {
 .box-two {
   max-height: 280px;
   overflow-x: hidden;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 #info {
   font-size: 18px;
@@ -233,8 +233,8 @@ header h2 {
 }
 .box-three {
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .box-three, article {
@@ -260,14 +260,14 @@ article h3 {
 .box-four {
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 .box-four h3{
   width: 100%;
 }
 .box-five {
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   width: 640px;
   overflow-y: hidden;
   scrollbar-color: #FFD029;
